@@ -1,0 +1,80 @@
+.container{
+  color: black;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px 50px 50px;
+  border: 5px solid green;
+}
+
+.title{
+  font-size: 24px;
+  margin: 30px 40px 50px 40px;
+  font-weight: 400;
+}
+
+.norma{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.normaPhoto{
+  width: 50%;
+}
+
+.normaTitle{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid green;
+  padding: 15px;
+  width: 50%;
+  font-size: 18px;
+}
+
+.normaPos{
+  display: flex;
+  font-size: 14px;
+}
+
+.normaInfo{
+  display: flex;
+  text-align: center;
+  font-size: 12px;
+}
+
+.marcela{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.marcelaPhoto{
+  width: 50%;
+}
+
+.marcelaTitle{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid green;
+  padding: 15px;
+  width: 50%;
+  font-size: 18px;
+}
+
+.nmarcelaPos{
+  display: flex;
+  font-size: 14px;
+}
+
+.normaInfo{
+  display: flex;
+  text-align: center;
+  font-size: 12px;
+}

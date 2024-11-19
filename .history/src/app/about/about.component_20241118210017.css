@@ -1,0 +1,32 @@
+.container{
+  color: black;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px 50px 50px;
+  border: 5px solid green;
+}
+
+.norma{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.normaPhoto{
+  width: 50%;
+}
+
+.normaTitle{
+  border: 5px solid green;
+  padding: 15px;
+  width: 50%;
+}
+
+.normaPos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}

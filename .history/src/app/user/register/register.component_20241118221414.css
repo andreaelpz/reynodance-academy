@@ -1,0 +1,152 @@
+.container {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 80px solid var(--lightPink);
+  background-color: transparent;
+  flex-direction: column;
+}
+
+.accountExists{
+  margin-top: -30px;
+  margin-bottom: 1px;
+}
+
+a{
+  color: var(--hotPink);
+  text-decoration: underline;
+}
+
+.sign-in{
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.background {
+  background-color: var(--hotPink);
+  border-radius: 5px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo{
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+
+.title{
+  font-size: 25px;
+  color: white;
+}
+
+.greeting{
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: white;
+}
+
+.student{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px 50px 50px;
+  border-radius: 5px;
+  background-color: var(--lightPink);
+}
+
+.parent{
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px 50px 50px;
+  border-radius: 5px;
+  background-color: var(--lightPink);
+}
+
+.formTitle{
+ display: flex;
+ justify-content: center;
+ font-size: 20px;
+}
+
+.info{
+  display: flex;
+  text-align: center;
+  font-size: 12px;
+}
+
+.student input{
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.parent input{
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.experience{
+  display:flex;
+  justify-content: space-between;
+}
+
+.buttons{
+  margin-top: 30px;
+  margin-bottom: -20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.confirmation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.formSubmitted {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.formSubmitted button{
+  margin-top: 15px;
+}
+
+.previous{
+  margin-right: 40px;
+}
+
+button{
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: var(--black);
+  color: var(--lightPink);
+  padding: 5px;
+}
+
+button:hover{
+  font-weight: 600;
+}
+
+.experienceToggle{
+  display:flex;
+  flex-direction: column;
+}
+
+.error{
+  
+}

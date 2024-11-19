@@ -1,0 +1,90 @@
+<div class="container">
+  <div class="accountExists">
+    Already have an account?
+  </div>
+  <div class="sign-in">
+    <a href="/sign-in">Sign In</a>
+  </div>
+  <div class="background">
+    <img class = "logo" src = "/assets/images/logo.png"/>
+    <div class="title">ReynoDance Academy Registration</div>
+    <div class = "greeting"> We are so happy you want to join us!</div>
+
+    <form (ngSubmit)="submitForm()" #registrationForm="ngForm">
+      <!-- STUDENT INFORMATION -->
+      <div class = "student" *ngIf= "currentPage === 1">
+        <div class = "formTitle">Student Information</div>
+        <div class = "info"> The following information should be completed with the information of the student being registered.</div>
+        <br>
+        Full Name: <input [(ngModel)]="user.fullName" name="name" type="text" required #name="ngModel"/>
+        <div *ngIf="name.invalid && name.touched" class = "error">Full name is required</div>
+        
+        Date of Birth:<input [(ngModel)]="user.dateOfBirth" name="dob" type="date" required #dob="ngModel"/>
+        <div *ngIf="dob.invalid && dob.touched" class = "error">Date of birth is required</div>
+
+        Age:<input [(ngModel)]="user.age" name="age" type="number" required min="1" #age="ngModel"/>
+        <div *ngIf="age.invalid && age.touched" class = "error">Age is required</div>
+        
+        Prior Dance Experience?
+        <div class="experience">
+          <input [(ngModel)]="user.hasDanceExperience" name="experience" type="radio" [value]="true" required/>Yes
+          <input [(ngModel)]="user.hasDanceExperience" name="experience" type="radio" [value]="false" required/>No
+        </div>
+        <br />
+        
+        <div class = "experienceToggle" *ngIf = "user.hasDanceExperience">
+          Length of previous dance experience:<input [(ngModel)]="user.experienceLength" name="exLength" type="number" />
+          Previous School name:<input [(ngModel)]="user.previousSchool" name="prevSchool" type="text"/>
+        </div>
+        
+        Any special condition the student requires attention for?<input [(ngModel)]="user.specialCondition" name="condition" type="text" />
+      </div>
+
+      <!-- PARENT INFORMATION -->
+      <div class = "parent" *ngIf= "currentPage === 2">
+        <div class = "formTitle">Parent Information</div>
+        <div class = "info"> The following information should be completed with the student's parents' information.</div>
+        <br>
+        Mother's Name:<input [(ngModel)]="user.mother.name" name="momName" type="text" />
+        <div *ngIf="momName.invalid && momName.touched" class = "error">Full name is required</div>
+
+        Address:<input [(ngModel)]="user.mother.address" name="momAddress" type="text" />
+        <div *ngIf="momAddress.invalid && momAddress.touched" class = "error">Full name is required</div>
+
+        Phone Number:<input [(ngModel)]="user.mother.phone" name="momPhoneNum" type="tel" />
+        <div *ngIf="name.invalid && name.touched" class = "error">Full name is required</div>
+
+        Occupation:<input [(ngModel)]="user.mother.occupation" name="momJob" type="text" />
+        
+        Father's Name:<input [(ngModel)]="user.father.name" name="momName" type="text" />
+        <div *ngIf="name.invalid && name.touched" class = "error">Full name is required</div>
+
+        Address:<input [(ngModel)]="user.father.address" name="dadAddress" type="text" />
+        <div *ngIf="name.invalid && name.touched" class = "error">Full name is required</div>
+
+        Phone Number:<input [(ngModel)]="user.father.phone" name="dadPhoneNum" type="tel" />
+        <div *ngIf="name.invalid && name.touched" class = "error">Full name is required</div>
+
+        Occupation:<input [(ngModel)]="user.father.occupation" name="dadJob" type="text" />
+      </div>
+
+    </form>
+
+    <div class = "buttons">
+      <div *ngIf = "currentPage === 1">
+        <button type="button" (click) = nextPage() [disabled] = "registrationForm.form.invalid">></button>
+      </div>
+      <div *ngIf = "currentPage === 2">
+        <button class = "previous" type = "button" (click) = "previousPage()"><</button>
+        <button type = "submit" (click) = "submitForm()">Submit</button>
+      </div>
+    </div>
+
+    <div class = "confirmation" *ngIf="confirmation == true">
+      <div class = "formSubmitted">
+        Form Submitted Successfully!
+        <a href = "/"><button (click) = "closeConfirmation()">OK</button></a>
+      </div>
+    </div>
+  </div>
+</div>
