@@ -1,0 +1,13 @@
+.container{
+    background-color: var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,48 @@
+.container{
+  color: black;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px 50px 50px;
+}
+
+.title{
+  font-size: 24px;
+  margin: 30px 40px 50px 40px;
+  font-weight: 400;
+}
+
+.teacher{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.teacherPhoto{
+  width: 50%;
+  border-radius: 
+}
+
+.teacherTitle{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  width: 50%;
+  font-size: 18px;
+}
+
+.teacherPos{
+  display: flex;
+  font-size: 14px;
+}
+
+.teacherInfo{
+  display: flex;
+  text-align: center;
+  font-size: 12px;
+}
+

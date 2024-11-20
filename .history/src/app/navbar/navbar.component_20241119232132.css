@@ -1,0 +1,52 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  background-color: var(--black);
+}
+
+.left{
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.left *{
+  margin-right: 15px;
+}
+
+.logo{
+  height: 65px;
+  border-radius: 100%;
+  margin-top: 5px;
+}
+
+.right{
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.right *{
+  margin-left: 25px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.sign-in{
+  background-color: var(--hotPink);
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.register:hover{
+  border-color: 10px solid var(--hotPink);
+  background-color: #FFEDFE;
+  color: var(--hotPink);
+  font-size: 18px;
+  font-weight: 400;
+  border-color: var(--hotPink)
+}

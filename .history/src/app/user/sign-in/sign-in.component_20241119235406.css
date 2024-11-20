@@ -1,0 +1,83 @@
+.container{
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 80px solid var(--lightPink);
+  background-color: transparent;
+  flex-direction: column;
+}
+
+accountExists{
+  
+}
+
+a{
+  color: var(--hotPink);
+  text-decoration: underline;
+}
+
+.register{
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.background{
+  background-color: var(--hotPink);
+  padding: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign-in{
+  display:flex;
+  flex-direction: column;
+  background-color: var(--lightPink);
+  padding: 30px 50px 30px 50px;
+  border-radius: 5px;
+}
+
+.sign-in input{
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.logo{
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+
+.reynodance{
+  font-size: 25px;
+  color: white;
+}
+
+.title{
+  margin-bottom: 15px;
+  font-size: 15px;
+  color: white;
+}
+
+.login{
+  margin-top: 30px;
+  margin-bottom: -20px;
+  background-color: var(--black);
+  color: var(--lightPink);
+}
+
+button{
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: var(--black);
+  color: var(--lightPink);
+  padding: 5px;
+}
+
+button:hover{
+  font-weight: 600;
+}
+
