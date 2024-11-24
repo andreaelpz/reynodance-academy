@@ -12,9 +12,24 @@
     flex-direction: column;
 }
 
+.socials{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+i{
+    font-size: 18px;
+    color: var(--hotPink);
+}
+
 .title{
     font-size: 18px;
     font-weight: 400;
+}
+
+.fas{
+    font-size: 18px;
 }
 
 a{
@@ -25,6 +40,7 @@ a{
 
 .contact{
     font-size: 12px;
+    margin-top: 5px;
 }
 
 .copyrightText{

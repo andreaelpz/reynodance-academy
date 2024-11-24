@@ -1,37 +1,38 @@
 
-    <div class = "pictures">
-        <button type = "picsButton" (click) = prevPic()><</button>
-        <img alt = "ReynoDance" [src]="getImagePath()">
-        <button type = "picsButton" (click) = nextPic()>></button>
-    </div>
+<div class = "pictures">
+    <button type = "picsButton" (click) = prevPic()><</button>
+    <img alt = "ReynoDance" [src]="getImagePath()">
+    <button type = "picsButton" (click) = nextPic()>></button>
+</div>
+
 <div class = "container">
-    <div class = "intro">
-        <div class = "title">Who Are We?</div>
-        <div class = "summary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d
-            o eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute i
-            rure dolor in reprehenderit in voluptate velit esse cillum d
-            olore eu fugiat nulla pariatur. Excepteur sint occaecat cupi
-            datat non proident, sunt in culpa qui officia deserunt molli
-            t anim id est laborum.
-        </div>
+    <div class = "title">WELCOME TO REYNODANCE ACADEMY!</div>
+    <div class = "summary">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d
+        o eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute i
+        rure dolor in reprehenderit in voluptate velit esse cillum d
+        olore eu fugiat nulla pariatur. Excepteur sint occaecat cupi
+        datat non proident, sunt in culpa qui officia deserunt molli
+        t anim id est laborum.
     </div>
 
-    <div class = "registerClass"> 
-        <button type = "button" [routerLink] = "['/register']" class = "register">Register Now!</button>
-    </div>
+    <button type = "button" [routerLink] = "['/about']" class = "learnMore">Learn more!</button>
 
     <div class = "moreInfo">
         <div class = "location">
-            Location: <br>
+            <div class = "locationTitle">Location:</div>
             2401 S. Shary Rd. <br>
             Suite 5 Riverside Plaza <br>
             Mission, TX 78572
         </div>
-        <div>        
-            <button type = "button" [routerLink] = "['/about']" class = "learnMore">Learn more!</button>
+        <div class = "hoursDiv">
+            <div class = "hoursTitle">Hours of Operation:</div>
+            <div class = "hours">
+                <div class = "days">Sunday<br> Monday - Thursday<br> Friday <br>Saturday</div>
+                <div class = "time">CLOSED<br> 3:00 PM - 9:00 PM <br>5:00 PM - 8:00 PM<br> 10:00 AM - 1:00 PM</div>
+            </div>
         </div>
     </div>
 </div>

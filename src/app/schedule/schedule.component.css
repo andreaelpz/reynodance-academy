@@ -1,0 +1,132 @@
+.container{
+    color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .title{
+    font-size: 28px;
+    font-weight:400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--hotPink);
+  }
+
+  .below{
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  
+  .generalInfo{
+    margin-bottom: 30px;
+    font-weight: 400;
+    width:100%;
+  }
+
+  .classInfo{
+    margin-top: 40px;
+    width:100%;
+  }
+  
+  .classes{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; 
+  }
+  
+  .class{
+    font-weight:600;
+    color: var(--hotPink);
+    font-size: 16px;
+  }
+  
+  .summary{
+    font-size: 14px;
+  }
+
+  .visualizer{
+    width: 100%;
+  }
+
+  .weekday{
+    display:flex;
+    flex-direction:row;
+  }
+
+  .day{
+    background-color: var(--hotPink);
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-bottom:5px;
+    width: 20%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row{
+    font-size: 14px;
+    display:flex;
+    justify-content: space-between;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 5px;
+  }
+
+  .schedule{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom:5px;
+    background-color: white;
+    border-radius: 5PX;;
+  }
+
+  button{
+    margin: 15px 20px 40px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--lightPink);
+    padding: 10px;
+    color: var(--black);
+    font-size: 13px;
+    border: 2px solid var(--hotPink);
+    display: inline-block;
+  }
+
+  .filter-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button:hover{
+    background-color: var(--hotPink);
+    color: white;
+  }
+
+  button.active{
+    background-color: var(--hotPink);
+    color: white;
+  }
+
+  .clear{
+    background-color: var(--hotPink);
+    color: white;
+    border-radius:100%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

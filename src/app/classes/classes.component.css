@@ -1,4 +1,42 @@
-p{
-  background-color: green;
+.container{
   color: black;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 50px 50px 50px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.title{
+  font-size: 28px;
+  font-weight:400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--hotPink);
+}
+
+.generalInfo{
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  width:100%;
+}
+
+.classes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.class{
+  font-weight:600;
+  color: var(--hotPink);
+  font-size: 16px;
+}
+
+.summary{
+  font-size: 14px;
 }

@@ -1,0 +1,59 @@
+.container{
+    color:black;
+    display:flex;
+    flex-direction: column;
+    padding: 30px 50px 50px 50px;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .title{
+    font-size: 28px;
+    font-weight:400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--hotPink);
+    text-align: center;
+  }
+
+  .agreement{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+
+  .pp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    width:100%;
+  }
+
+  .policy{
+    font-weight:600;
+    color: var(--hotPink);
+    font-size: 16px;
+  }
+
+  .explanation{
+    font-size: 14px;
+  }
+
+  .right{
+    margin-bottom: 20px;
+    color: var(--hotPink);
+    font-weight: 600;
+  }
+
+  .signature{
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .director{
+    font-size: 15px;
+    font-weight: 400;
+  }

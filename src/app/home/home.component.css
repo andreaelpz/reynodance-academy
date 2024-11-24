@@ -1,7 +1,7 @@
 .pictures {
   display: flex;
   width: 100%;
-  height: 350px;
+  height: 500px;
   flex-direction: row;
   justify-content: space-between;
   overflow: hidden;
@@ -39,19 +39,22 @@ img {
 }
 
 .container{
-  color:black;
+  color: black;
   display:flex;
   flex-direction: column;
   padding: 30px 50px 50px 50px;
+  width: 90%;
+  margin: 0 auto; /* Ensures it's centered horizontally */
+  box-sizing: border-box;
 }
 
 .title{
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-  font-size: 24px;
+  font-size: 28px;
   font-weight:400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--hotPink);
+  text-align: center;
 }
 
 .summary{
@@ -61,53 +64,71 @@ img {
     margin-bottom: 40px;
 }
 
-.registerClass{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.register{
-  background-color: var(--hotPink);
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-  color: var(--lightPink);
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
-  margin-bottom: 40px;
-}
-
-.register:hover{
-  border-color: 10px solid var(--hotPink);
-  background-color: var(--black);
-  color: white;
-  font-size: 19px;
-  font-weight: 400;
-  cursor: pointer; 
-}
-
 .moreInfo{
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.locationTitle{
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--hotPink);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.location,
+.hoursDiv {
+  flex: 1; /* Ensures equal width for both */
+  padding: 10px; /* Adds spacing inside each section */
+  box-sizing: border-box; /* Includes padding in width calculation */
+}
+
+.hoursTitle{
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--hotPink);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.hours{
+  display: flex;
+  justify-content: space-between;
+}
+
+.days {
+  text-align: left;
+  flex: 1;
+}
+
+.time {
+  text-align: right;
+  flex: 1;
 }
 
 .learnMore{
-  background-color: var(--hotPink);
+  background-color: var(--lightPink);
   padding: 8px;
   border-radius: 5px;
   border: none;
-  color: var(--lightPink);
+  color: black;
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 2px solid var(--hotPink);
 }
 
 .learnMore:hover{
-  border-color: 10px solid var(--hotPink);
-  background-color: var(--black);
-  color: white;
+  background-color: var(--hotPink);
   font-size: 19px;
   font-weight: 400;
   cursor: pointer; 
+  color: white;
 }
