@@ -9,11 +9,11 @@ export class ScheduleComponent {
   groups: string[] = ['PRE-BALLET', 'LITTLE BALLET', 'BALLET I', 'BALLET II', 'ELITE TEEN'];
 
   groupSummaries: Record<string, string> = {
-    'PRE-BALLET': 'Students will be accepted starting at 2 years old (boys and girls)...',
-    'LITTLE BALLET': 'Students will be placed and relocated by the instructor...',
-    'BALLET I': 'This group includes a mix of tap, jazz, aerial, and ballet...',
-    'BALLET II': 'Students advance their skills with more rigorous techniques...',
-    'ELITE TEEN': 'A specialized group for advanced-level teens...'
+    'PRE-BALLET': 'Students aged 3-4 years old (boys and girls) are introduced to the basics of ballet in a fun and creative environment, focusing on coordination, rhythm, and self-expression.',
+    'LITTLE BALLET': 'Designed for students aged 5-6 years old, this group builds on foundational ballet skills. Students will be placed and relocated by the instructor based on their progress and readiness.',
+    'BALLET I': 'For students aged 6½-8 years old, this group includes a mix of tap, jazz, aerial, and ballet. Those advancing from Little Ballet are moved to this group for further development.',
+    'BALLET II': 'Students aged 9-11 years old advance their skills with more rigorous techniques, focusing on strength, precision, and artistry in multiple dance styles.',
+    'ELITE TEEN': 'A specialized group for advanced-level teens aged 12 and up, offering a challenging curriculum to refine technique and performance across various styles.'
   };
 
   week = [

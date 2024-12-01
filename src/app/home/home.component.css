@@ -52,7 +52,7 @@ img {
   font-size: 28px;
   font-weight:400;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
   color: var(--hotPink);
   text-align: center;
 }
@@ -62,6 +62,7 @@ img {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
+    margin-top: 35px;
 }
 
 .moreInfo{

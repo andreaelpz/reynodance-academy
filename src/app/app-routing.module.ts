@@ -10,6 +10,7 @@ import { RegisterComponent } from './user/register/register.component';
 import { PolicyComponent } from './policy/policy.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { FaqComponent } from './faq/faq.component';
+import { AdminComponent } from './adminView/admin/admin.component';
 
 const routes: Routes = [
   {path: 'about', component: AboutComponent, title:"About - ReynoDance"},
@@ -21,11 +22,12 @@ const routes: Routes = [
   {path: '', component: HomeComponent, title:"ReynoDance Academy"},
   {path: 'faq', component: FaqComponent, title:"FAQ - ReynoDance"},
   {path: 'policy', component: PolicyComponent, title:"Rules & Regulations - ReynoDance"},
-  {path: 'schedule', component: ScheduleComponent, title:"Schedule - ReynoDance"}
+  {path: 'schedule', component: ScheduleComponent, title:"Schedule - ReynoDance"},
+  {path: 'admin', component: AdminComponent, title:"Admin - ReynoDance"}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

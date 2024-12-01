@@ -10,9 +10,9 @@
     <div class="reynodance">ReynoDance Academy Sign-In</div>
     <div class = "title"> Sign-In to view your dashboard!</div>
     <form class = "sign-in" (ngSubmit)="signIn()">
-      Username:<input name = "username" type="text" email/>
-      Password:<input name = "username" type="text" />
+      Username: <input name="username" type="text" [(ngModel)]="username" />
+      Password: <input name="password" type="password" [(ngModel)]="password" />
     </form>
-    <a href= "/dashboard" ><button class = "login" type="submit">Sign-In</button></a>
+    <button class = "login" type="submit" (click) = "signIn()">Sign-In</button>
   </div>
 </div>

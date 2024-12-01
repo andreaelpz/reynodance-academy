@@ -1,80 +1,12 @@
 <div class = "container">
     <div class = "title">CLASSES OFFERED</div>
-    <div class = "classes">
-        <div class="generalInfo">Private lesson bookings available upon request.</div>
+    <div class = "classes" *ngFor = "let class of classes" >
         
         <div class = "class">
-            AERIAL SILKS:
+            {{class.class}}
         </div>
         <div class = "summary">
-            Students will be accepted starting at 2 years old (boys and girls).
-            <br>Students will be placed and relocated by the instructor into their respective groups according to their age and knowledge of the subject.
-        </div>
-    </div>
-
-    <div class = "classes">
-        
-        <div class = "class">
-            BALLET:
-        </div>
-        <div class = "summary">
-            Students will be accepted starting at 2 years old (boys and girls).
-            <br>Students will be placed and relocated by the instructor into their respective groups according to their age and knowledge of the subject.
-        </div>
-    </div>
-
-    <div class = "classes">
-        
-        <div class = "class">
-            GYMNASTICS:
-        </div>
-        <div class = "summary">
-            Students will be accepted starting at 2 years old (boys and girls).
-            <br>Students will be placed and relocated by the instructor into their respective groups according to their age and knowledge of the subject.
-        </div>
-    </div>
-
-    <div class = "classes">
-        
-        <div class = "class">
-            HIP-HOP:
-        </div>
-        <div class = "summary">
-            Students will be accepted starting at 2 years old (boys and girls).
-            <br>Students will be placed and relocated by the instructor into their respective groups according to their age and knowledge of the subject.
-        </div>
-    </div>
-
-    <div class = "classes">
-        
-        <div class = "class">
-            JAZZ:
-        </div>
-        <div class = "summary">
-            Students will be accepted starting at 2 years old (boys and girls).
-            <br>Students will be placed and relocated by the instructor into their respective groups according to their age and knowledge of the subject.
-        </div>
-    </div>
-
-    <div class = "classes">
-        
-        <div class = "class">
-            LATIN RHYTHMS:
-        </div>
-        <div class = "summary">
-            Students will be accepted starting at 2 years old (boys and girls).
-            <br>Students will be placed and relocated by the instructor into their respective groups according to their age and knowledge of the subject.
-        </div>
-    </div>
-
-    <div class = "classes">
-        
-        <div class = "class">
-            TAP:
-        </div>
-        <div class = "summary">
-            Students will be accepted starting at 2 years old (boys and girls).
-            <br>Students will be placed and relocated by the instructor into their respective groups according to their age and knowledge of the subject.
+            {{class.summary}}
         </div>
     </div>
 </div>

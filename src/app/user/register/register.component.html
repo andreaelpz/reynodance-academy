@@ -19,7 +19,7 @@
         Full Name: <input [(ngModel)]="user.fullName" name="name" type="text" required #name="ngModel"/>
         <div *ngIf="name.invalid && name.touched" class = "error">Full name is required</div>
         
-        Date of Birth:<input [(ngModel)]="user.dateOfBirth" name="dob" type="date" required #dob="ngModel"/>
+        Date of Birth:<input [(ngModel)]="user.dateOfBirth" name="dob" type="string" required #dob="ngModel"/>
         <div *ngIf="dob.invalid && dob.touched" class = "error">Date of birth is required</div>
 
         Age:<input [(ngModel)]="user.age" name="age" type="number" required min="1" #age="ngModel"/>
@@ -51,6 +51,9 @@
         Address:<input [(ngModel)]="user.mother.address" name="momAddress" type="text" required #momAddress="ngModel"/>
         <div *ngIf="momAddress.invalid && momAddress.touched" class = "error">Mother's address is required</div>
 
+        Email Address:<input [(ngModel)]="user.mother.email" name="momEmail" type="email" required #momEmail="ngModel"/>
+        <div *ngIf="momEmail.invalid && momEmail.touched" class = "error">Mother's email address is required</div>
+
         Phone Number:<input [(ngModel)]="user.mother.phone" name="momPhoneNum" type="tel" required #momNum="ngModel"/>
         <div *ngIf="momNum.invalid && momNum.touched" class = "error">Mother's phone number is required</div>
 
@@ -61,6 +64,9 @@
 
         Address:<input [(ngModel)]="user.father.address" name="dadAddress" type="text" required #dadAddress="ngModel"/>
         <div *ngIf="dadAddress.invalid && dadAddress.touched" class = "error">Father's address is required</div>
+
+        Email Address:<input [(ngModel)]="user.father.email" name="dadEmail" type="email" required #dadEmail="ngModel"/>
+        <div *ngIf="dadEmail.invalid && dadEmail.touched" class = "error">Father's email address is required</div>
 
         Phone Number:<input [(ngModel)]="user.father.phone" name="dadPhoneNum" type="tel" required #dadNum="ngModel"/>
         <div *ngIf="dadNum.invalid && dadNum.touched" class = "error">Father's phone number is required</div>
@@ -82,7 +88,8 @@
 
     <div class = "confirmation" *ngIf="confirmation == true">
       <div class = "formSubmitted">
-        Form Submitted Successfully!
+        <div>Form Submitted Successfully!</div>
+        <div class = "nextsteps">You will receive an email shortly stating next steps.</div>
         <a href = "/"><button (click) = "closeConfirmation()">OK</button></a>
       </div>
     </div>

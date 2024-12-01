@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  images: string[] = ['studio.jpg', 'girls.jpg', 'solo.jpg'];
+  images: string[] = ['cover.jpg', 'beast.jpg', 'pinoccio.jpg', 'girls.jpg', 'couple.jpg', 'pink.jpg', 'pose.jpg', 'martians.jpg', 'cowgirls.jpg', 'end.jpg'];
   currentIndex: number = 0;
 
   nextPic(): number{

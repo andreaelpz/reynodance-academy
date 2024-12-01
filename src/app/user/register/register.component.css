@@ -120,6 +120,10 @@ a{
   flex-direction: column;
 }
 
+.nextsteps{
+  
+}
+
 .formSubmitted button{
   margin-top: 15px;
 }

@@ -1,7 +1,7 @@
 <div class = "container">
     <div class = "title">GROUP SCHEDULES</div>
 
-    <div class = "below"> Group information below!</div>
+    <div class = "below"> Visualize your schedule below!</div>
     
     <div class="filter-buttons">
         <button class = "clear" (click) = "refresh()">
@@ -15,6 +15,17 @@
         </button>
       </div>
 
+    <div class = "classInfo">
+        <div class = "classes" *ngFor = "let group of groups">   
+            <div class = "class">
+                {{ group }}
+            </div>
+            <div class = "summary">
+                {{ groupSummaries[group] }}
+            </div>
+        </div>
+    </div>
+
     <div class = "visualizer">
         <div class = "graph">
             <div class = "weekday" *ngFor = "let day of week">
@@ -26,17 +37,6 @@
                         <div class = "time"  *ngIf = "selected.includes(schedule.group)"> {{ schedule.time }}</div>
                     </div>
                 </div>  
-            </div>
-        </div>
-    </div>
-
-    <div class = "classInfo">
-        <div class = "classes" *ngFor = "let group of groups">   
-            <div class = "class">
-                {{ group }}
-            </div>
-            <div class = "summary">
-                {{ groupSummaries[group] }}
             </div>
         </div>
     </div>
