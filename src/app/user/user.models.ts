@@ -2,6 +2,7 @@ import { EmailValidator } from "@angular/forms";
 
 export interface User {
     // Student Information
+    id: string;
     fullName: string;
     dateOfBirth: string;
     age: number;
@@ -9,6 +10,7 @@ export interface User {
     experienceLength?: number; // Optional
     previousSchool?: string; // Optional
     specialCondition?: string; // Optional
+    status: string;
 
     // Parent Information
     mother: {

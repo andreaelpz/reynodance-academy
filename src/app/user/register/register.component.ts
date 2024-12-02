@@ -11,6 +11,7 @@ import { formatDate } from '@angular/common';
 
 export class RegisterComponent {
   user: User = {
+    id:'',
     fullName: '',
     dateOfBirth: '',
     age: 0,
@@ -27,6 +28,7 @@ export class RegisterComponent {
       email: '',
       phone: '',
     },
+    status: ''
   };
   
   currentPage: number = 1;
