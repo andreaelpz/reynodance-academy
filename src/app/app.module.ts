@@ -18,6 +18,7 @@ import { PolicyComponent } from './policy/policy.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { FaqComponent } from './faq/faq.component';
 import { AdminComponent } from './adminView/admin/admin.component';
+import { RegistrationsComponent } from './adminView/registrations/registrations.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AdminComponent } from './adminView/admin/admin.component';
     PolicyComponent,
     ScheduleComponent,
     FaqComponent,
-    AdminComponent
+    AdminComponent,
+    RegistrationsComponent
   ],
   imports: [
     BrowserModule,
