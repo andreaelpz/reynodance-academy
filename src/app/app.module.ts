@@ -19,6 +19,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { FaqComponent } from './faq/faq.component';
 import { AdminComponent } from './adminView/admin/admin.component';
 import { RegistrationsComponent } from './adminView/registrations/registrations.component';
+import { StudentsComponent } from './adminView/students/students.component';
+import { SignUpComponent } from './user/sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { RegistrationsComponent } from './adminView/registrations/registrations.
     ScheduleComponent,
     FaqComponent,
     AdminComponent,
-    RegistrationsComponent
+    RegistrationsComponent,
+    StudentsComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,

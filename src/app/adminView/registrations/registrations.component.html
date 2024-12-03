@@ -1,5 +1,5 @@
 <div class = "container">
-    <div *ngIf="registrations.length > 0; else noRegistrations">
+    <div *ngIf="pendingRegistrations.length > 0; else noRegistrations">
         <h2>Registrations</h2>
         <table>
           <thead>
@@ -11,11 +11,13 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let registration of registrations">
+            <tr *ngFor="let registration of pendingRegistrations">
               <td>{{ registration.fullName }}</td>
               <td>{{ registration.age }}</td>
               <td>{{ registration.mother.email }}</td>
               <td>{{ registration.status }}</td>
+              <button (click)="acceptRegistration(registration.id)">Accept</button>
+              <button (click)="rejectRegistration(registration.id)">Reject</button>
             </tr>
           </tbody>
         </table>

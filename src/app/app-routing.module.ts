@@ -12,6 +12,8 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { FaqComponent } from './faq/faq.component';
 import { AdminComponent } from './adminView/admin/admin.component';
 import { RegistrationsComponent } from './adminView/registrations/registrations.component';
+import { StudentsComponent } from './adminView/students/students.component';
+import { SignUpComponent } from './user/sign-up/sign-up.component';
 
 const routes: Routes = [
   {path: 'about', component: AboutComponent, title:"About - ReynoDance"},
@@ -25,7 +27,9 @@ const routes: Routes = [
   {path: 'policy', component: PolicyComponent, title:"Rules & Regulations - ReynoDance"},
   {path: 'schedule', component: ScheduleComponent, title:"Schedule - ReynoDance"},
   {path: 'admin', component: AdminComponent, title:"Admin - ReynoDance"},
-  {path: 'registrations', component: RegistrationsComponent, title: ""}
+  {path: 'registrations', component: RegistrationsComponent, title: ""},
+  {path: 'students', component: StudentsComponent, title: ""},
+  {path: 'sign-up', component: SignUpComponent, title: ""}
 ];
 
 @NgModule({

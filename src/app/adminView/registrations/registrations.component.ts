@@ -20,6 +20,10 @@ export class RegistrationsComponent implements OnInit {
     this.fetchRegistrations();
   }
 
+  get pendingRegistrations() {
+    return this.registrations.filter(registration => registration.status === 'PENDING');
+  }
+
   fetchRegistrations(): void {
     this.adminService.getRegistrations(this.username, this.password)
       .subscribe(
@@ -31,6 +35,32 @@ export class RegistrationsComponent implements OnInit {
           console.error('Error fetching registrations', error);
         }
       );
+  }
+
+  acceptRegistration(id: string): void {
+    this.adminService.acceptRegistration(id, this.username, this.password).subscribe(
+      (response) => {
+        alert('Registration accepted and email sent');
+        console.log(response);
+        this.fetchRegistrations(); // Refresh the list
+      },
+      (error) => {
+        console.error('Error accepting registration', error);
+      }
+    );
+  }
+
+  rejectRegistration(id: string): void {
+    this.adminService.rejectRegistration(id, this.username, this.password).subscribe(
+      (response) => {
+        alert('Registration rejected and deleted');
+        console.log(response);
+        this.fetchRegistrations(); // Refresh the list
+      },
+      (error) => {
+        console.error('Error rejecting registration', error);
+      }
+    );
   }
 
 }
