@@ -1,6 +1,7 @@
 <div class = "container">
-    <div *ngIf="acceptedStudents.length > 0; else noRegistrations">
-        <h2>Registrations</h2>
+    <div *ngIf="users.length > 0; else noStudents">
+      
+        <h2>Students</h2>
         <table>
           <thead>
             <tr>
@@ -11,16 +12,16 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let registration of acceptedStudents">
-              <td>{{ registration.fullName }}</td>
-              <td>{{ registration.age }}</td>
-              <td>{{ registration.mother.email }}</td>
-              <td>{{ registration.status }}</td>
+            <tr *ngFor="let user of users">
+              <td>{{ user.fullName }}</td>
+              <td>{{ user.age }}</td>
+              <td>{{ user.mother.email }}</td>
+              <td>{{ user.status }}</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <ng-template #noRegistrations>
-        <p>No registrations available.</p>
+      <ng-template #noStudents>
+        <p>No students registered.</p>
       </ng-template>    
 </div>

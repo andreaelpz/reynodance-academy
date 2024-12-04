@@ -42,7 +42,7 @@ export class RegistrationsComponent implements OnInit {
       (response) => {
         alert('Registration accepted and email sent');
         console.log(response);
-        this.fetchRegistrations(); // Refresh the list
+        this.fetchRegistrations(); 
       },
       (error) => {
         console.error('Error accepting registration', error);
@@ -55,7 +55,7 @@ export class RegistrationsComponent implements OnInit {
       (response) => {
         alert('Registration rejected and deleted');
         console.log(response);
-        this.fetchRegistrations(); // Refresh the list
+        this.fetchRegistrations(); 
       },
       (error) => {
         console.error('Error rejecting registration', error);

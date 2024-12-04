@@ -24,10 +24,8 @@ export class SignUpComponent {
   onSubmit() {
     const credentials = { username: this.username, password: this.password };
     
-    // Send to the backend to create the username/password and move to users
     this.http.post(`http://localhost:8080/api/create-username-password/${this.registrationID}`, credentials)
       .subscribe(response => {
-        // Handle the response (e.g., show success message)
         // TODO: add a success message----------------
       }, error => {
         console.error('Error during registration:', error);

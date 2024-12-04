@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AdminService } from '../admin.service';
-import { Registration } from '../registration.models';
+import { User } from '../user.models';
 
 @Component({
   selector: 'app-students',
@@ -8,7 +8,7 @@ import { Registration } from '../registration.models';
   styleUrls: ['./students.component.css']
 })
 export class StudentsComponent implements OnInit{
-  registrations: Registration[] = [];
+  users: User[] = [];
 
   username = 'admin'; 
   password = 'admin123';
@@ -16,22 +16,21 @@ export class StudentsComponent implements OnInit{
   constructor(private adminService: AdminService) {}
 
   ngOnInit(): void {
-    this.fetchRegistrations();
+    this.fetchUsers();
   }
 
-  get acceptedStudents() {
-    return this.registrations.filter(registration => registration.status === 'ACCEPTED');
-  }
-
-  fetchRegistrations(): void {
-    this.adminService.getRegistrations(this.username, this.password)
+  fetchUsers(): void {
+    console.log("------------ inside fetchUsers function) -----------")
+    this.adminService.getUsers(this.username, this.password)
       .subscribe(
         (data) => {
-          this.registrations = data;
-          console.log('Registrations:', data);
+          console.log("inside the successful case")
+          this.users = data;
+          console.log('Users:', data);
         },
         (error) => {
-          console.error('Error fetching registrations', error);
+          console.log("inside the NOT successful case")
+          console.error('Error fetching users', error);
         }
       );
   }

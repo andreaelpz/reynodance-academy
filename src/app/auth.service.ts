@@ -7,17 +7,15 @@ import { BehaviorSubject, Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private baseUrl = 'http://localhost:8080/auth'; // Replace with your backend URL
+  private baseUrl = 'http://localhost:8080/auth'; 
   private loggedIn = new BehaviorSubject<boolean>(this.isTokenAvailable());
 
   constructor(private http: HttpClient, private router: Router) {}
 
-  // Observable to track login status
   get isLoggedIn(): Observable<boolean> {
     return this.loggedIn.asObservable();
   }
 
-  // Login method
   login(username: string, password: string): Observable<any> {
     return new Observable((observer) => {
       this.http

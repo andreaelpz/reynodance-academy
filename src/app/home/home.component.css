@@ -11,7 +11,7 @@
 img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* crop excess */
+  object-fit: cover;
 }
 
 .pictures button {
@@ -20,7 +20,7 @@ img {
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5); 
   color: white; 
-  border: none; /* Remove borders */
+  border: none;
   padding: 10px;
   cursor: pointer;
   border-radius: 25px;
@@ -44,7 +44,7 @@ img {
   flex-direction: column;
   padding: 30px 50px 50px 50px;
   width: 90%;
-  margin: 0 auto; /* Ensures it's centered horizontally */
+  margin: 0 auto; 
   box-sizing: border-box;
 }
 
@@ -83,9 +83,9 @@ img {
 
 .location,
 .hoursDiv {
-  flex: 1; /* Ensures equal width for both */
-  padding: 10px; /* Adds spacing inside each section */
-  box-sizing: border-box; /* Includes padding in width calculation */
+  flex: 1; 
+  padding: 10px;
+  box-sizing: border-box; 
 }
 
 .hoursTitle{

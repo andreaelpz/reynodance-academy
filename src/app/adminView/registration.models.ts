@@ -5,9 +5,9 @@ export interface Registration {
     dateOfBirth: string;
     age: number;
     hasDanceExperience: boolean;
-    experienceLength?: number; // Optional
-    previousSchool?: string; // Optional
-    specialCondition?: string; // Optional
+    experienceLength?: number; 
+    previousSchool?: string; 
+    specialCondition?: string;
     status: string;
 
     // Parent Information
@@ -16,7 +16,7 @@ export interface Registration {
     address: string;
     email: string;
     phone: string;
-    occupation?: string; // Optional
+    occupation?: string; 
     };
 
     father: {
@@ -24,6 +24,6 @@ export interface Registration {
     address: string;
     email: string;
     phone: string;
-    occupation?: string; // Optional
+    occupation?: string; 
     };
 }
