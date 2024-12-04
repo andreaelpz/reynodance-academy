@@ -17,7 +17,7 @@ export class SignUpComponent {
 
   ngOnInit(){
     this.route.queryParams.subscribe(params => {
-      this.registrationID = params['regID'];
+      this.registrationID = params['id'];
     })
   }
 
